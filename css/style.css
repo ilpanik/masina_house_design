@@ -163,11 +163,15 @@ a {
 .home-portfolio,
 .home-contacts,
 .about-us-section-two,
-.about-us-section-three,
+.about-us-section-three {
+    position: relative;
+    margin-top: 40px;
+    /*background: rebeccapurple;*/
+}
+
 .about-us-section-four {
     position: relative;
     margin-top: 150px;
-    /*background: rebeccapurple;*/
 }
 
 /*.home-contacts {*/

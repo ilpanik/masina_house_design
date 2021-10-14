@@ -90,12 +90,12 @@ window.addEventListener("DOMContentLoaded", () => {
     // });
 
     gsap.to(".about-us-section-two--left img", {
-        yPercent: -500,
+        yPercent: -200,
         ease: "none",
         scrollTrigger: {
-            trigger: ".about-us",
-            start: "100%", // the default values
-            end: "600%",
+            trigger: ".about-us .about-us-section-two",
+            // start: "100%", // the default values
+            // end: "600%",
             scrub: true
         },
     });
