@@ -166,7 +166,7 @@ a {
 .about-us-section-three,
 .about-us-section-four {
     position: relative;
-    margin-top: 40px;
+    margin-top: 150px;
     /*background: rebeccapurple;*/
 }
 
@@ -492,7 +492,7 @@ a {
 .about-us-section-three .about-us-section-three--right {
     position: absolute;
     /*top: 50px;*/
-    top: 1240px;
+    top: 830px;
     left: 50%;
     z-index: 5;
 }

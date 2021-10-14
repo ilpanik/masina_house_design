@@ -101,7 +101,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     gsap.to(".about-us-section-three--right", {
-        yPercent: -300,
+        yPercent: -200,
         ease: "none",
         scrollTrigger: {
             trigger: ".about-us .about-us-section-three",
