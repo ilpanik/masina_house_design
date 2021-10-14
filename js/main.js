@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // });
 
     gsap.to(".home-about--inner-text", {
-        yPercent: -200,
+        y: -800,
         ease: "none",
         scrollTrigger: {
             trigger: ".home-start",
@@ -35,7 +35,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     gsap.to(".abs-1", {
-        yPercent: -400,
+        y: -400,
         ease: "none",
         scrollTrigger: {
             trigger: ".home-about",
@@ -46,7 +46,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     gsap.to(".abs-2", {
-        yPercent: -300,
+        y: -300,
         ease: "none",
         scrollTrigger: {
             trigger: ".home-about",
@@ -57,7 +57,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     gsap.to(".abs-3", {
-        yPercent: -600,
+        y: -700,
         ease: "none",
         scrollTrigger: {
             trigger: ".home-about",
@@ -68,7 +68,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     gsap.to(".abs-4", {
-        yPercent: -500,
+        y: -400,
         ease: "none",
         scrollTrigger: {
             trigger: ".home-about",
@@ -78,16 +78,16 @@ window.addEventListener("DOMContentLoaded", () => {
         },
     });
 
-    gsap.to(".home-portfolio--inner-text-container", {
-        yPercent: -100,
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".home-portfolio",
-            // start: "top bottom", // the default values
-            // end: "bottom top",
-            scrub: true
-        },
-    });
+    // gsap.to(".home-portfolio--inner-text-container", {
+    //     yPercent: -100,
+    //     ease: "none",
+    //     scrollTrigger: {
+    //         trigger: ".home-portfolio",
+    //         // start: "top bottom", // the default values
+    //         // end: "bottom top",
+    //         scrub: true
+    //     },
+    // });
 
     gsap.to(".about-us-section-two--left img", {
         yPercent: -500,
