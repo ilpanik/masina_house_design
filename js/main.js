@@ -123,15 +123,37 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     gsap.to(".section-two-image-two", {
-        yPercent: -200,
-        ease: "none",
         scrollTrigger: {
-            trigger: ".project-detail .section .section-two",
-            // start: "top bottom", // the default values
-            // end: "bottom top",
-            scrub: true
+            // pin: true,
+            // pinType: isTouch ? 'fixed' : 'transform',
+            // end: '200%',
+            scrub: true,
+            trigger: ".section-two"
         },
+
+        y: (i, target) => -totalScroll * target.dataset.speed,
+        ease: "power1.inOut"
     });
+
+    // gsap.to(".section-two-image-two", {
+    //     // yPercent: -200,
+    //     // ease: "none",
+    //     scrollTrigger: {
+    //         pin: true,
+    //         pinType: isTouch ? 'fixed' : 'transform',
+    //         trigger: ".project-detail .section .section-two",
+    //         // start: "top bottom", // the default values
+    //         // end: "bottom top",
+    //         scrub: true
+    //     },
+    //     y: (i, target) => {
+    //         console.log(totalScroll);
+    //         console.log(target.dataset.speed);
+    //         console.log(-totalScroll * target.dataset.speed);
+    //         return -totalScroll * target.dataset.speed
+    //     },
+    //     ease: "none"
+    // });
 
     gsap.to(".section-three-image-one", {
         yPercent: -300,
