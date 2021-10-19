@@ -730,6 +730,26 @@ a {
     margin-top: 20px;
 }
 
+.project-detail-text-sm {
+    display: none;
+    margin-top: 50px;
+}
+
+.projects-sm-device {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-sm-device .project:not(:first-child) {
+    margin-top: 100px;
+}
+
+.projects-sm-device .project img {
+    height: auto;
+    width: 100%;
+}
+
 
 /* ___ */
 
@@ -912,6 +932,376 @@ span.ripple {
 /* CUSTOM SCROLL */
 /* END CUSTOM SCROLL*/
 
-@media screen and (min-width: 1440px) {
+/*small monitor*/
+@media only screen
+and (min-width: 1024px)
+and (max-width: 1439px) {
+    /*default design*/
+    .home-container {
+        background: rgba(255, 0, 0, 0.36);
+    }
 
+    /*.home-start .home-start-section-left,*/
+    /*.home-start-section-left--panel {*/
+    /*    margin-left: 0;*/
+    /*}*/
+    /*.home-start .home-start-section-right,*/
+    /*.home-start-section-right--panel {*/
+    /*    margin-right: 0;*/
+    /*}*/
+    .home-start-section-left--panel,
+    .home-start-section-right--panel {
+        width: 100%;
+    }
+
+    .portfolio .portfolio--inner .portfolio--inner-start {
+        width: 100%;
+        text-align: center;
+    }
+
+    .portfolio .portfolio--inner-projects {
+        display: block;
+    }
+
+    .project-left,
+    .project-right {
+        display: none;
+    }
+
+    .projects-sm-device {
+        display: flex;
+    }
+
+    .project-detail {
+        background: red;
+    }
+
+    .project-detail .section-one > img {
+        left: 55%;
+    }
+}
+
+/*pad*/
+@media only screen
+and (min-width: 768px)
+and (max-width: 1023px) {
+    /*small laptops*/
+    /* HOME */
+    .home-container {
+        background: yellow;
+    }
+
+    .home-start .home-start-section-left,
+    .home-start-section-left--panel {
+        margin-left: 0;
+    }
+
+    .home-start .home-start-section-right,
+    .home-start-section-right--panel {
+        margin-right: 0;
+    }
+
+    .home-start-section-left--panel,
+    .home-start-section-right--panel {
+        width: 100%;
+    }
+
+    .fake-navbar .fake-navbar--inner {
+        margin-right: 0;
+    }
+
+    .home-about .home-about--inner {
+        width: 100%;
+    }
+
+    .home-about .home-about--inner .home-about--inner-text {
+        left: 0;
+    }
+
+    .home-about .home-about--inner .home-about--inner-text .home-about--inner-text-container {
+        margin: 20px;
+        height: 100%;
+    }
+
+    .home-portfolio .home-portfolio--inner-text-container {
+        /*width: 100%;*/
+        /*top: 65%;*/
+        /*left: 0;*/
+
+        /*width: 60%;*/
+        /*height: 40%;*/
+        width: 70%;
+        height: 30%;
+        top: 65%;
+        left: 50%;
+        background: #fff;
+    }
+
+    .home-portfolio--inner-text-container-exp {
+        height: 100%;
+        width: 100%;
+        margin: 20px;
+        position: relative;
+    }
+
+    .home-contacts .home-contacts--inner {
+        margin: 0;
+    }
+
+    .home-contacts .home-contacts--inner > img {
+        top: 25%;
+        left: unset;
+        right: 0;
+        height: auto;
+        width: 40%;
+    }
+
+    .footer .footer--inner {
+        margin: 50px 20px;
+    }
+
+    /* FINE HOME */
+    /* ABOUT US */
+    .about-us {
+        background: yellow;
+    }
+
+    .about-us-section-one--left,
+    .about-us-section-two--left {
+        margin-left: 0;
+    }
+
+    .about-us-section-one--right,
+    .about-us-section-two--right {
+        margin-right: 0;
+    }
+
+    .about-us-section-one--left-inner {
+        margin-left: 50px;
+    }
+
+    .about-us-section-one--right > img {
+        left: unset;
+        right: 0;
+    }
+
+    .about-us-section-two--left > img {
+        height: auto;
+        width: 100%;
+    }
+
+    .about-us-section-two--left,
+    .about-us-section-two--right {
+        flex: 1 1 0;
+    }
+
+    .about-us-section-four .about-us-section-four--inner {
+        margin: 0;
+    }
+
+    .about-us-section-four .about-us-section-four--left {
+        height: auto;
+        width: 35%;
+    }
+
+    .about-us-section-four .about-us-section-four--inner-text-section {
+        width: 95%;
+    }
+
+    .about-us-section-four--inner .get-in-touch {
+        bottom: 70px;
+    }
+
+    .portfolio {
+        background: yellow;
+    }
+
+    .portfolio .portfolio--inner .portfolio--inner-start {
+        width: 100%;
+        text-align: center;
+    }
+
+    .portfolio .portfolio--inner-projects {
+        display: block;
+    }
+
+    .project-left,
+    .project-right {
+        display: none;
+    }
+
+    .projects-sm-device {
+        display: flex;
+    }
+
+    .project-detail {
+        background: yellow;
+    }
+
+    .project-detail .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-detail .section-one .text-container {
+        position: static;
+        width: auto;
+        margin-top: 50px;
+    }
+
+    .project-detail .section-one .text-container .main-text {
+        display: none;
+    }
+
+    .project-detail-text-sm {
+        display: block;
+    }
+
+    .project-detail .section-one > img {
+        position: static;
+        height: auto;
+        width: 70%;
+        margin-top: 50px;
+        transform: none;
+    }
+
+    .project-detail .section:not(:first-child) {
+        margin-top: 100px;
+    }
+}
+
+/*mobile*/
+@media screen
+and (min-width: 0)
+and (max-width: 767px) {
+    /*768 ipad*/
+    .home-container {
+        background: purple;
+    }
+
+    .portfolio {
+        background: #F9F5ED;
+    }
+
+    .portfolio .portfolio--inner {
+        margin: 0;
+    }
+
+    .portfolio .portfolio--inner .portfolio--inner-start {
+        width: 100%;
+        text-align: center;
+    }
+
+    .portfolio .portfolio--inner .portfolio--inner-start .main-heading {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: #C09A5B;
+    }
+
+    .portfolio .portfolio--inner .portfolio--inner-start .main-text-enhanced {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 28px;
+        text-align: center;
+        color: #333333;
+    }
+
+    .portfolio .portfolio--inner-projects {
+        display: block;
+    }
+
+    .project-left,
+    .project-right {
+        display: none;
+    }
+
+    .projects-sm-device {
+        display: flex;
+    }
+
+    .portfolio .project--final-section {
+        display: none;
+    }
+
+    .project-detail {
+        background: purple;
+    }
+
+    .project-detail .project-detail--inner {
+        margin: 0;
+    }
+
+    .project-detail .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-detail .section-one {
+        margin: 0 20px;
+    }
+
+    .project-detail .section-one .text-container {
+        position: static;
+        width: auto;
+        margin-top: 50px;
+    }
+
+    .project-detail .section-one .text-container .main-text {
+        display: none;
+    }
+
+    .project-detail-text-sm {
+        display: block;
+    }
+
+    .project-detail .section-one .text-container .main-heading {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: #C09A5B;
+    }
+
+    .project-detail-text-sm .main-text {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 28px;
+        text-align: center;
+        color: #333333;
+    }
+
+    .project-detail .section-one > img {
+        position: static;
+        height: auto;
+        width: 70%;
+        margin-top: 50px;
+        transform: none;
+    }
+
+    .project-detail .section-two .section-two-image-one {
+        height: auto;
+        width: 100%;
+    }
+
+    .project-detail .section-two .section-two-image-two {
+        top: 50%;
+        left: 25%;
+        height: auto;
+        width: 50%;
+    }
+
+    .project-detail .project-detail--final-section {
+        display: none;
+    }
+
+    .project-detail .section-three .section-three-image-two {
+        /*top: 20%;*/
+
+    }
 }
