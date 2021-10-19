@@ -12,7 +12,7 @@ html, body {
 
 body {
     background: #fff;
-    display: flex;
+    display: block;
 }
 
 a {
