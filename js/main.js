@@ -23,7 +23,8 @@ window.addEventListener("DOMContentLoaded", () => {
     // });
 
     gsap.to(".home-about--inner-text", {
-        y: -800,
+        y: (i, target) => -totalScroll * target.dataset.speed,
+
         ease: "none",
         scrollTrigger: {
             trigger: ".home-start",
@@ -35,7 +36,8 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     gsap.to(".abs-1", {
-        y: -400,
+        y: (i, target) => -totalScroll * target.dataset.speed,
+
         ease: "none",
         scrollTrigger: {
             trigger: ".home-about",
@@ -46,7 +48,8 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     gsap.to(".abs-2", {
-        y: -300,
+        y: (i, target) => -totalScroll * target.dataset.speed,
+
         ease: "none",
         scrollTrigger: {
             trigger: ".home-about",
@@ -57,7 +60,8 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     gsap.to(".abs-3", {
-        y: -700,
+        y: (i, target) => -totalScroll * target.dataset.speed,
+
         ease: "none",
         scrollTrigger: {
             trigger: ".home-about",
@@ -68,7 +72,8 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     gsap.to(".abs-4", {
-        y: -400,
+        y: (i, target) => -totalScroll * target.dataset.speed,
+
         ease: "none",
         scrollTrigger: {
             trigger: ".home-about",
@@ -90,10 +95,11 @@ window.addEventListener("DOMContentLoaded", () => {
     // });
 
     gsap.to(".about-us-section-two--left img", {
-        yPercent: -200,
+        y: (i, target) => -totalScroll * target.dataset.speed,
+
         ease: "none",
         scrollTrigger: {
-            trigger: ".about-us .about-us-section-two",
+            trigger: ".about-us-section-two",
             // start: "100%", // the default values
             // end: "600%",
             scrub: true
@@ -101,10 +107,11 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     gsap.to(".about-us-section-three--right", {
-        yPercent: -200,
+        y: (i, target) => -totalScroll * target.dataset.speed,
+
         ease: "none",
         scrollTrigger: {
-            trigger: ".about-us .about-us-section-three",
+            trigger: ".about-us-section-three",
             // start: "top bottom", // the default values
             // end: "bottom top",
             scrub: true
@@ -112,10 +119,11 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     gsap.to(".about-us-section-four--left", {
-        yPercent: -120,
+        y: (i, target) => -totalScroll * target.dataset.speed,
+
         ease: "none",
         scrollTrigger: {
-            trigger: ".about-us .about-us-section-four",
+            trigger: ".about-us-section-four",
             // start: "top bottom", // the default values
             // end: "bottom top",
             scrub: true
@@ -123,16 +131,14 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     gsap.to(".section-two-image-two", {
+        y: (i, target) => -totalScroll * target.dataset.speed,
+
         scrollTrigger: {
-            // pin: true,
-            // pinType: isTouch ? 'fixed' : 'transform',
-            // end: '200%',
             scrub: true,
             trigger: ".section-two"
         },
 
-        y: (i, target) => -totalScroll * target.dataset.speed,
-        ease: "power1.inOut"
+        ease: "none"
     });
 
     // gsap.to(".section-two-image-two", {
@@ -156,10 +162,11 @@ window.addEventListener("DOMContentLoaded", () => {
     // });
 
     gsap.to(".section-three-image-one", {
-        yPercent: -300,
+        y: (i, target) => -totalScroll * target.dataset.speed,
+
         ease: "none",
         scrollTrigger: {
-            trigger: ".project-detail .section .section-three",
+            trigger: ".section-three",
             // start: "top bottom", // the default values
             // end: "bottom top",
             scrub: true
@@ -167,10 +174,11 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     gsap.to(".section-three-image-two", {
-        yPercent: -300,
+        y: (i, target) => -totalScroll * target.dataset.speed,
+
         ease: "none",
         scrollTrigger: {
-            trigger: ".project-detail .section .section-three",
+            trigger: ".section-three",
             // start: "top bottom", // the default values
             // end: "bottom top",
             scrub: true
@@ -178,10 +186,11 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     gsap.to(".section-four-image-one", {
-        yPercent: -200,
+        y: (i, target) => -totalScroll * target.dataset.speed,
+
         ease: "none",
         scrollTrigger: {
-            trigger: ".project-detail .section .section-four",
+            trigger: ".section-four",
             // start: "top bottom", // the default values
             // end: "bottom top",
             scrub: true
@@ -189,10 +198,11 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     gsap.to(".section-four-image-two", {
-        yPercent: -100,
+        y: (i, target) => -totalScroll * target.dataset.speed,
+
         ease: "none",
         scrollTrigger: {
-            trigger: ".project-detail .section .section-four",
+            trigger: ".section-four",
             // start: "top bottom", // the default values
             // end: "bottom top",
             scrub: true
