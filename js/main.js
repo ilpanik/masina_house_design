@@ -5,9 +5,18 @@ if ('scrollRestoration' in window.history) {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
+    const isNotMobile = window.matchMedia('(min-width: 768px)')
     const asscroll = setupASScroll();
     const isTouch = ('ontouchstart' in document.documentElement);
     const totalScroll = asscroll.containerElement.scrollHeight - innerHeight;
+
+    console.log(isNotMobile);
+    // if (isNotMobile.matches) {
+    //     document.querySelector('.home-start-mobile').style.display = 'none';
+    //     document.querySelector('.home-about-mobile').style.display = 'none';
+    //     document.querySelector('.home-portfolio-mobile').style.display = 'none';
+    //     document.querySelector('.home-contacts-mobile').style.display = 'none';
+    // }
 
     // gsap.to(".test1", {
     //     scrollTrigger: {
@@ -209,16 +218,36 @@ window.addEventListener("DOMContentLoaded", () => {
         },
     });
 
-    // gsap.to(".test-img", {
-    //     yPercent: -100,
-    //     ease: "none",
-    //     scrollTrigger: {
-    //         trigger: ".home-about",
-    //         // start: "top bottom", // the default values
-    //         // end: "bottom top",
-    //         scrub: true
-    //     },
-    // });
+    // MOBILE STRICT SECTIONS PARALLAX
+
+    gsap.to(".home-about-mobile-box", {
+        y: (i, target) => -totalScroll * target.dataset.speed,
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".home-about-mobile",
+            scrub: true,
+            invalidateOnRefresh: true
+        },
+    });
+
+    gsap.to(".img-1", {
+        y: (i, target) => -totalScroll * target.dataset.speed,
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".home-portfolio-mobile",
+            scrub: true
+        },
+    });
+
+    gsap.to(".img-2", {
+        y: (i, target) => -totalScroll * target.dataset.speed,
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".home-portfolio-mobile",
+            scrub: true
+        },
+    });
+
 
     const masinaBtns = document.querySelectorAll(".masina-btn");
     console.log(masinaBtns);
@@ -235,11 +264,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
     setTimeout(() => {
         document.querySelector('.preview-section').classList.add('hide-brute');
-    }, 10000);
+    }, 5000);
 
     document.querySelector('.home-link').addEventListener("click", function () {
         window.location = '../';
     });
+
     let projects = document.querySelectorAll('.portfolio .project');
     for (var i = 0; i < projects.length; i++) {
         projects[i].addEventListener("click", function () {
@@ -315,3 +345,15 @@ function createRipple(event) {
 
     button.appendChild(circle);
 }
+
+document.querySelector('.ig-icon').addEventListener("click", function () {
+    window.open('https://www.instagram.com/masina_house_design', '_blank');
+});
+
+document.querySelector('.fb-icon').addEventListener("click", function () {
+    window.open('https://www.facebook.com/Masina-House-Design-343132932515577', '_blank');
+});
+
+document.querySelector('.linkedin-icon').addEventListener("click", function () {
+    window.open('', '_blank');
+});
