@@ -690,6 +690,10 @@ a {
     margin-top: 180px;
 }
 
+.main-section .main-section-text .main-text {
+    margin-top: 30px;
+}
+
 .drop-section {
     display: flex;
     flex-direction: row;
@@ -1952,6 +1956,12 @@ and (max-width: 767px) {
         margin: 50px 50px 0 50px;
     }
 
+    .portfolio .portfolio--inner .portfolio--inner-start .secondary-text-enhanced {
+        margin-right: 50px;
+        margin-left: 50px;
+        line-height: 28px;
+    }
+
     .portfolio .portfolio--inner-projects {
         display: block;
         margin-top: 50px;
@@ -1971,7 +1981,8 @@ and (max-width: 767px) {
     }
 
     .projects-sm-device .project .main-text {
-        margin-top: 30px;
+        /*margin-top: 30px;*/
+        margin-top: 10px;
     }
 
     .portfolio .project--final-section {
@@ -2163,6 +2174,11 @@ and (max-width: 767px) {
     /*    display: none;*/
     /*}*/
     /* FINE PROJECT DETAIL /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+    .footer {
+        background: #FBFAF8;
+        border-top: 1px solid #C09A5B;
+    }
+
     .footer .footer--inner {
         margin: 0;
         flex-direction: column;
