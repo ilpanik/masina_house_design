@@ -10,6 +10,12 @@ window.addEventListener("DOMContentLoaded", () => {
     const isTouch = ('ontouchstart' in document.documentElement);
     const totalScroll = asscroll.containerElement.scrollHeight - innerHeight;
 
+    ripplet.defaultOptions.color = 'rgb(255, 255, 255)';
+    ripplet.defaultOptions.opacity = 0.5;
+    // ripplet.defaultOptions.currentTarget = '.masina-btn';
+
+    // ripplet({currentTarget: e.target.nextElementSibling}, {centered: true, opacity: .2})
+
     console.log(isNotMobile);
     // if (isNotMobile.matches) {
     //     document.querySelector('.home-start-mobile').style.display = 'none';
@@ -127,96 +133,113 @@ window.addEventListener("DOMContentLoaded", () => {
         },
     });
 
-    gsap.to(".about-us-section-four--left", {
+    if (isNotMobile.matches) {
+        gsap.to(".about-us-section-four--left", {
+            y: (i, target) => -totalScroll * target.dataset.speed,
+
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".about-us-section-four",
+                // start: "top bottom", // the default values
+                // end: "bottom top",
+                scrub: true
+            },
+        });
+    }
+
+
+    /* PROJECT DETAIL /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+    gsap.to(".drop-section-second", {
         y: (i, target) => -totalScroll * target.dataset.speed,
-
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".about-us-section-four",
-            // start: "top bottom", // the default values
-            // end: "bottom top",
-            scrub: true
-        },
-    });
-
-    gsap.to(".section-two-image-two", {
-        y: (i, target) => -totalScroll * target.dataset.speed,
-
         scrollTrigger: {
             scrub: true,
-            trigger: ".section-two"
+            trigger: ".drop-section"
         },
-
         ease: "none"
     });
 
-    // gsap.to(".section-two-image-two", {
-    //     // yPercent: -200,
-    //     // ease: "none",
+    gsap.to(".combo-section-type-one--one", {
+        y: (i, target) => -totalScroll * target.dataset.speed,
+        scrollTrigger: {
+            scrub: true,
+            trigger: ".combo-section-type-one"
+        },
+        ease: "none"
+    });
+
+    gsap.to(".combo-section-type-two--one", {
+        y: (i, target) => -totalScroll * target.dataset.speed,
+        scrollTrigger: {
+            scrub: true,
+            trigger: ".combo-section-type-two"
+        },
+        ease: "none"
+    });
+
+    // gsap.to(".section-three-image-one", {
+    //     y: (i, target) => -totalScroll * target.dataset.speed,
+    //
+    //     ease: "none",
     //     scrollTrigger: {
-    //         pin: true,
-    //         pinType: isTouch ? 'fixed' : 'transform',
-    //         trigger: ".project-detail .section .section-two",
+    //         trigger: ".section-three",
     //         // start: "top bottom", // the default values
     //         // end: "bottom top",
     //         scrub: true
     //     },
-    //     y: (i, target) => {
-    //         console.log(totalScroll);
-    //         console.log(target.dataset.speed);
-    //         console.log(-totalScroll * target.dataset.speed);
-    //         return -totalScroll * target.dataset.speed
-    //     },
-    //     ease: "none"
     // });
+    //
+    // gsap.to(".section-three-image-two", {
+    //     y: (i, target) => -totalScroll * target.dataset.speed,
+    //
+    //     ease: "none",
+    //     scrollTrigger: {
+    //         trigger: ".section-three",
+    //         // start: "top bottom", // the default values
+    //         // end: "bottom top",
+    //         scrub: true
+    //     },
+    // });
+    //
+    // gsap.to(".section-three-image-three", {
+    //     y: (i, target) => -totalScroll * target.dataset.speed,
+    //
+    //     ease: "none",
+    //     scrollTrigger: {
+    //         trigger: ".section-three",
+    //         // start: "top bottom", // the default values
+    //         // end: "bottom top",
+    //         scrub: true
+    //     },
+    // });
+    //
+    // gsap.to(".section-four-image-one", {
+    //     y: (i, target) => -totalScroll * target.dataset.speed,
+    //
+    //     ease: "none",
+    //     scrollTrigger: {
+    //         trigger: ".section-four",
+    //         // start: "top bottom", // the default values
+    //         // end: "bottom top",
+    //         scrub: true
+    //     },
+    // });
+    //
+    // gsap.to(".section-four-image-two", {
+    //     y: (i, target) => -totalScroll * target.dataset.speed,
+    //
+    //     ease: "none",
+    //     scrollTrigger: {
+    //         trigger: ".section-four",
+    //         // start: "top bottom", // the default values
+    //         // end: "bottom top",
+    //         scrub: true
+    //     },
+    // });
+    //todo tutto quello commentato è giusto, non ci sono double comments
 
-    gsap.to(".section-three-image-one", {
-        y: (i, target) => -totalScroll * target.dataset.speed,
-
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".section-three",
-            // start: "top bottom", // the default values
-            // end: "bottom top",
-            scrub: true
-        },
-    });
-
-    gsap.to(".section-three-image-two", {
-        y: (i, target) => -totalScroll * target.dataset.speed,
-
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".section-three",
-            // start: "top bottom", // the default values
-            // end: "bottom top",
-            scrub: true
-        },
-    });
-
-    gsap.to(".section-four-image-one", {
-        y: (i, target) => -totalScroll * target.dataset.speed,
-
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".section-four",
-            // start: "top bottom", // the default values
-            // end: "bottom top",
-            scrub: true
-        },
-    });
-
-    gsap.to(".section-four-image-two", {
-        y: (i, target) => -totalScroll * target.dataset.speed,
-
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".section-four",
-            // start: "top bottom", // the default values
-            // end: "bottom top",
-            scrub: true
-        },
-    });
+    /* FINE PROJECT DETAIL /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
     // MOBILE STRICT SECTIONS PARALLAX
 
@@ -230,14 +253,14 @@ window.addEventListener("DOMContentLoaded", () => {
         },
     });
 
-    gsap.to(".img-1", {
-        y: (i, target) => -totalScroll * target.dataset.speed,
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".home-portfolio-mobile",
-            scrub: true
-        },
-    });
+    // gsap.to(".img-1", {
+    //     y: (i, target) => -totalScroll * target.dataset.speed,
+    //     ease: "none",
+    //     scrollTrigger: {
+    //         trigger: ".home-portfolio-mobile",
+    //         scrub: true
+    //     },
+    // });
 
     gsap.to(".img-2", {
         y: (i, target) => -totalScroll * target.dataset.speed,
@@ -249,11 +272,11 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    const masinaBtns = document.querySelectorAll(".masina-btn");
-    console.log(masinaBtns);
-    for (const btn of masinaBtns) {
-        btn.addEventListener("click", createRipple);
-    }
+    // const masinaBtns = document.querySelectorAll(".masina-btn");
+    // console.log(masinaBtns);
+    // for (const btn of masinaBtns) {
+    //     btn.addEventListener("click", createRipple);
+    // }
 
     //todo @panik
     setTimeout(() => {
@@ -262,9 +285,15 @@ window.addEventListener("DOMContentLoaded", () => {
         document.querySelector('.preview-section').classList.add('vertical-translate-off');
     }, 3500);
 
-    setTimeout(() => {
-        document.querySelector('.preview-section').classList.add('hide-brute');
-    }, 5000);
+    if (isNotMobile.matches) {
+        setTimeout(() => {
+            document.querySelector('.preview-section').classList.add('hide-brute');
+        }, 5500);
+    } else {
+        setTimeout(() => {
+            document.querySelector('.preview-section').classList.add('hide-brute');
+        }, 4000);
+    }
 
     document.querySelector('.home-link').addEventListener("click", function () {
         window.location = '../';
@@ -336,14 +365,23 @@ function createRipple(event) {
     circle.style.position = 'absolute';
     circle.style.width = circle.style.height = `${diameter}px`;
     circle.style.left = `${event.clientX - (button.offsetLeft + radius)}px`;
-    // circle.style.top = `${event.clientY - (button.offsetTop + radius)}px` todo @panik fix offset top al click;
+    circle.style.top = `${event.clientY - (button.offsetTop + radius)}px` //todo @panik fix offset top al click;
     circle.classList.add("ripple");
+
+    // console.log('circle.style.width => ', circle.style.width)
+    // console.log('circle.style.left => ', circle.style.left)
+    console.log('event.clientY => ', event.clientY)
+    console.log('button.offsetTop => ', button.offsetTop)
+    console.log('radius => ', radius)
+    console.log('(button.offsetTop + radius) => ', (button.offsetTop + radius))
+    console.log('circle.style.top => ', circle.style.top)
 
     if (ripple) {
         ripple.remove();
     }
 
     button.appendChild(circle);
+    // window.location.href = "mailto:info@masinaouse.com";
 }
 
 document.querySelector('.ig-icon').addEventListener("click", function () {

@@ -80,7 +80,7 @@
                 <rect x="-0.595703" y="0.9729" width="62.2058" height="42.237" fill="#C09A5B"/>
             </g>
         </svg>
-        <button class="masina-btn">Get in touch</button>
+        <button class="masina-btn" data-ripplet>Get in touch</button>
         <img src="../assets/images/burger-menu.svg" alt="burger menu">
     </div>
 </div>
@@ -89,8 +89,8 @@
         <div class="fake-navbar--placeholder"></div>
         <div class="project-detail">
             <div class="project-detail--inner">
-                <div class="section section-one">
-                    <div class="text-container">
+                <div class="main-section">
+                    <div class="main-section-text">
                         <div class="main-heading">
                             Long project name
                         </div>
@@ -98,39 +98,59 @@
                             Dubai, UAE, Lorem ipsum
                         </div>
                     </div>
-                    <img src="../assets/images/project-detail-1.png" alt="">
-                    <div class="project-detail-text-sm">
-                        <div class="main-text">
-                            Dubai, UAE, Lorem ipsum
-                        </div>
+                    <div class="main-section-img">
+                        <img src="../assets/images/project-detail/project-detail-1.png" alt="">
+                    </div>
+                    <div class="main-section-phantom">
+                        <!-- in mobile mettere quello in main text in una <div> interna da nascondere in desktop-->
+                        Dubai, UAE, Lorem ipsum
                     </div>
                 </div>
-                <div class="section section-two">
-                    <img class="section-two-image-one" src="../assets/images/project-detail-2-1.png" alt="">
-                    <img class="section-two-image-two" src="../assets/images/project-detail-2-2.png" alt=""
-                         data-speed="0.05">
+                <div class="drop-section">
+                    <div class="drop-section-first">
+                        <img src="../assets/images/project-detail/project-detail-2-1.png" alt="">
+                    </div>
+                    <div class="drop-section-second" data-speed="0.02">
+                        <img src="../assets/images/project-detail/project-detail-2-2.png" alt="">
+                    </div>
                 </div>
-                <div class="section section-three">
-                    <img class="section-three-image-one" src="../assets/images/project-detail-3-1.png" alt=""
-                         data-speed="0.05">
-                    <img class="section-three-image-two" src="../assets/images/project-detail-3-2.png" alt=""
-                         data-speed="0.1">
-                    <img class="section-three-image-three" src="../assets/images/project-detail-3-3.png" alt="">
+                <div class="combo-section-type-one">
+                    <div class="combo-section-type-one--one" data-speed="0.02">
+                        <img src="../assets/images/project-detail/project-detail-3-2.png" alt="">
+                    </div>
+                    <div class="combo-section-type-one--two">
+                        <img src="../assets/images/project-detail/project-detail-3-3.png" alt="">
+                    </div>
+                    <div class="combo-section-type-one--phantom">
+                        <img src="../assets/images/project-detail/project-detail-3-3.png" alt="">
+                    </div>
                 </div>
-                <div class="section section-four">
-                    <img class="section-four-image-one" src="../assets/images/project-detail-4-1.png" alt=""
-                         data-speed="0.15">
-                    <img class="section-four-image-two" src="../assets/images/project-detail-4-2.png" alt=""
-                         data-speed="0.1">
+                <div class="control-section">
+                    <div class="control-section-img">
+                        <img src="../assets/images/project-detail/project-detail-placeholder-1.png" alt="">
+                    </div>
                 </div>
-                <div class="section section-five">
-                    <img class="section-five-image-one" src="../assets/images/project-detail-5.png" alt="">
+                <div class="combo-section-type-two">
+                    <div class="combo-section-type-two--one" data-speed="0.02">
+                        <img class="section-four-image-one"
+                             src="../assets/images/project-detail/project-detail-placeholder-2.png"
+                             alt="">
+                    </div>
+                    <div class="combo-section-type-two--two">
+                        <img class="section-four-image-two" src="../assets/images/project-detail/project-detail-4-2.png"
+                             alt="">
+                    </div>
+                </div>
+                <div class="control-section">
+                    <div class="control-section-img">
+                        <img src="../assets/images/project-detail/project-detail-placeholder-3.png" alt="">
+                    </div>
                 </div>
             </div>
             <div class="project-detail--final-section">
                 <div class="get-in-touch">
                     <div>
-                        <button class="masina-btn">Get in touch</button>
+                        <button class="masina-btn" data-ripplet>Get in touch</button>
                     </div>
                     <a href="../portfolio" class="main-cta">
                         <img src="../assets/images/arrow-left.svg" alt=""> Back to projects
@@ -138,6 +158,7 @@
                 </div>
             </div>
         </div>
+
         <div class="footer">
             <div class="footer--inner">
                 <div class="footer--inner-left">
@@ -261,13 +282,48 @@
     </div>
 </div>
 
-<!--<div class="asscrollbar">-->
-<!--    <div class="asscrollbar-handle">-->
-<!--        <div>X / X</div>-->
-<!--    </div>-->
-<!--</div>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/@ashthornton/asscroll@2.0.2/build/asscroll.min.js"></script>-->
+<!--            <div class="project-detail&#45;&#45;inner">-->
+<!--                <div class="section section-one">-->
+<!--                    <div class="text-container">-->
+<!--                        <div class="main-heading">-->
+<!--                            Long project name-->
+<!--                        </div>-->
+<!--                        <div class="main-text">-->
+<!--                            Dubai, UAE, Lorem ipsum-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <img src="../assets/images/project-detail-1.png" alt="">-->
+<!--                    <div class="project-detail-text-sm">-->
+<!--                        <div class="main-text">-->
+<!--                            Dubai, UAE, Lorem ipsum-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="section section-two">-->
+<!--                    <img class="section-two-image-one" src="../assets/images/project-detail-2-1.png" alt="">-->
+<!--                    <img class="section-two-image-two" src="../assets/images/project-detail-2-2.png" alt=""-->
+<!--                         data-speed="0.05">-->
+<!--                </div>-->
+<!--                <div class="section section-three">-->
+<!--&lt;!&ndash;                    <img class="section-three-image-one" src="../assets/images/project-detail-3-1.png" alt=""&ndash;&gt;-->
+<!--&lt;!&ndash;                         data-speed="0.05">&ndash;&gt;-->
+<!--                    <img class="section-three-image-two" src="../assets/images/project-detail-3-2.png" alt=""-->
+<!--                         data-speed="0.05">-->
+<!--                    <img class="section-three-image-three" src="../assets/images/project-detail-3-3.png" alt="" data-speed="0.03">-->
+<!--                </div>-->
+<!--                <div class="section section-four">-->
+<!--                    <img class="section-four-image-one" src="../assets/images/project-detail-4-1.png" alt=""-->
+<!--                         data-speed="0.05">-->
+<!--                    <img class="section-four-image-two" src="../assets/images/project-detail-4-2.png" alt=""-->
+<!--                         data-speed="0.03">-->
+<!--                </div>-->
+<!--                <div class="section section-five">-->
+<!--                    <img class="section-five-image-one" src="../assets/images/project-detail-5.png" alt="">-->
+<!--                </div>-->
+
+
 <script src="../vendors/asscroll/asscroll.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/ripplet.js@1.1.0/umd/ripplet-declarative.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
 <script src="../js/main.js"></script>
