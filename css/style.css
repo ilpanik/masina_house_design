@@ -664,7 +664,7 @@ a {
 }
 
 .project-detail .project-detail--inner {
-    margin: 0 120px;
+    margin: 0 125px;
 
     display: flex;
     flex-direction: column;
@@ -2191,8 +2191,10 @@ and (max-width: 767px) {
 .line-test {
     position: absolute;
     width: 1px;
-    top: 152px;
+    /*top: 152px;*/
+    top: 24vh;
     right: 100px;
-    height: 720px;
+    /*height: 720px;*/
+    height: 50vh;
     background: #C09A5B;
 }
