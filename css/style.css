@@ -122,10 +122,13 @@ a {
 .home-about,
 .home-portfolio,
 .home-contacts,
-.about-us-section-two,
 .about-us-section-three,
 .about-us-section-four {
     height: 100vh;
+}
+
+.about-us-section-two {
+    height: 70vh;
 }
 
 .home-start .home-start-section-left,
@@ -1095,6 +1098,26 @@ and (max-width: 1439px) {
         width: 100%;
     }
 
+    .home-portfolio .home-portfolio--inner-text-container {
+        left: 53%;
+    }
+
+    .home-portfolio--inner-text-container .main-text {
+        left: 25%;
+    }
+
+    .home-contacts .home-contacts--inner .home-contacts--inner-text-container {
+        left: 0;
+    }
+
+    .home-contacts .home-utils--section-margin {
+        margin-left: 40px;
+    }
+
+    .about-us-section-four .about-us-section-four--inner-text {
+        top: 60%
+    }
+
     .portfolio .portfolio--inner .portfolio--inner-start {
         width: 100%;
         text-align: center;
@@ -1131,6 +1154,7 @@ and (max-width: 1023px) {
     .line-test {
         display: none;
     }
+
     /*small laptops*/
     /* HOME */
     .home-start .home-start-section-left,
@@ -1168,18 +1192,26 @@ and (max-width: 1023px) {
 
         /*width: 60%;*/
         /*height: 40%;*/
-        width: 70%;
+        width: 64%;
         height: 30%;
         top: 65%;
-        left: 50%;
+        left: 53%;
         background: #fff;
     }
 
     .home-portfolio--inner-text-container-exp {
         height: 100%;
         width: 100%;
-        margin: 20px;
+        margin: 20px 0;
         position: relative;
+    }
+
+    .home-portfolio--inner-text-container .main-heading {
+        left: 20px;
+    }
+
+    .home-portfolio--inner-text-container .main-text {
+        left: 25%;
     }
 
     .home-contacts .home-contacts--inner {
@@ -1192,6 +1224,14 @@ and (max-width: 1023px) {
         right: 0;
         height: auto;
         width: 35%;
+    }
+
+    .home-contacts .home-contacts--inner .home-contacts--inner-text-container {
+        left: 0;
+    }
+
+    .home-contacts .home-utils--section-margin {
+        margin-left: 40px;
     }
 
     .footer .footer--inner {
