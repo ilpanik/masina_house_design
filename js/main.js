@@ -109,17 +109,19 @@ window.addEventListener("DOMContentLoaded", () => {
     //     },
     // });
 
-    gsap.to(".about-us-section-two--left img", {
-        y: (i, target) => -totalScroll * target.dataset.speed,
+    if (isNotMobile.matches) {
+        gsap.to(".about-us-section-two--left img", {
+            y: (i, target) => -totalScroll * target.dataset.speed,
 
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".about-us-section-two",
-            // start: "100%", // the default values
-            // end: "600%",
-            scrub: true
-        },
-    });
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".about-us-section-two",
+                // start: "100%", // the default values
+                // end: "600%",
+                scrub: true
+            },
+        });
+    }
 
     gsap.to(".about-us-section-three--right", {
         y: (i, target) => -totalScroll * target.dataset.speed,
