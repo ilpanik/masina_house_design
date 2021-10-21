@@ -272,11 +272,11 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    // const masinaBtns = document.querySelectorAll(".masina-btn");
-    // console.log(masinaBtns);
-    // for (const btn of masinaBtns) {
-    //     btn.addEventListener("click", createRipple);
-    // }
+    const masinaBtns = document.querySelectorAll(".masina-btn");
+    console.log(masinaBtns);
+    for (const btn of masinaBtns) {
+        btn.addEventListener("click", openEmailClient);
+    }
 
     //todo @panik
     setTimeout(() => {
@@ -381,7 +381,10 @@ function createRipple(event) {
     }
 
     button.appendChild(circle);
-    // window.location.href = "mailto:info@masinaouse.com";
+}
+
+function openEmailClient() {
+    window.location.href = "mailto:info@masinaouse.com";
 }
 
 document.querySelector('.ig-icon').addEventListener("click", function () {
