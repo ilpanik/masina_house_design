@@ -999,6 +999,16 @@ span.ripple {
     transform: translate(0);
 }
 
+.full-menu.opacity-transition-menu {
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
 .vertical-translate-off {
     -webkit-transition: 2.5s;
     -moz-transition: 2.5s;
@@ -2038,11 +2048,15 @@ and (orientation: landscape) {
     position: absolute;
     width: 1px;
     /*top: 152px;*/
-    top: 24vh;
+    top: 20vh;
     right: 100px;
     /*height: 720px;*/
     height: 50vh;
     background: #C09A5B;
+}
+
+.burger-menu-mobile {
+    all: unset;
 }
 
 .full-menu {
@@ -2057,9 +2071,17 @@ and (orientation: landscape) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    pointer-events: none;
 }
 
-.full-menu .tree-rings-spacekiller {
+.full-menu .tree-rings-spacekiller-menu {
+    background: url(../assets/images/tree-rings.svg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 150px;
     position: absolute;
     z-index: -1;
 }

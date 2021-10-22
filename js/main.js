@@ -389,18 +389,18 @@ function openEmailClient() {
     window.location.href = "mailto:info@masinaouse.com";
 }
 
-// document.querySelector('.porcodio').addEventListener("click", function () {
-//     console.log('menu clicked');
-//     document.querySelector('.full-menu').style.display = 'flex'
-// });
+document.querySelector('.burger-menu-mobile').addEventListener("click", function () {
+    console.log('menu clicked');
+    document.querySelector('.full-menu').classList.add('opacity-transition-menu')
+});
 
 document.querySelector('.burger-menu').addEventListener("click", function () {
     console.log('menu clicked');
-    document.querySelector('.full-menu').style.display = 'flex'
+    document.querySelector('.full-menu').classList.add('opacity-transition-menu')
 });
 
 document.querySelector('.svg-close').addEventListener("click", function () {
-    document.querySelector('.full-menu').style.display = 'none'
+    document.querySelector('.full-menu').classList.remove('opacity-transition-menu')
 });
 
 document.querySelector('.ig-icon').addEventListener("click", function () {
