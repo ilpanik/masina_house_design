@@ -389,6 +389,20 @@ function openEmailClient() {
     window.location.href = "mailto:info@masinaouse.com";
 }
 
+// document.querySelector('.porcodio').addEventListener("click", function () {
+//     console.log('menu clicked');
+//     document.querySelector('.full-menu').style.display = 'flex'
+// });
+
+document.querySelector('.burger-menu').addEventListener("click", function () {
+    console.log('menu clicked');
+    document.querySelector('.full-menu').style.display = 'flex'
+});
+
+document.querySelector('.svg-close').addEventListener("click", function () {
+    document.querySelector('.full-menu').style.display = 'none'
+});
+
 document.querySelector('.ig-icon').addEventListener("click", function () {
     window.open('https://www.instagram.com/masina_house_design', '_blank');
 });
