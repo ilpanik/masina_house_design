@@ -391,16 +391,19 @@ function openEmailClient() {
 
 document.querySelector('.burger-menu-mobile').addEventListener("click", function () {
     console.log('menu clicked');
-    document.querySelector('.full-menu').classList.add('opacity-transition-menu')
+    document.querySelector('.full-menu').classList.add('opacity-transition-menu');
+    document.querySelector('body').classList.add('scroll-hidden');
 });
 
 document.querySelector('.burger-menu').addEventListener("click", function () {
     console.log('menu clicked');
-    document.querySelector('.full-menu').classList.add('opacity-transition-menu')
+    document.querySelector('.full-menu').classList.add('opacity-transition-menu');
+    document.querySelector('body').classList.add('scroll-hidden');
 });
 
 document.querySelector('.svg-close').addEventListener("click", function () {
-    document.querySelector('.full-menu').classList.remove('opacity-transition-menu')
+    document.querySelector('.full-menu').classList.remove('opacity-transition-menu');
+    document.querySelector('body').classList.remove('scroll-hidden');
 });
 
 document.querySelector('.ig-icon').addEventListener("click", function () {

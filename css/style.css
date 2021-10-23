@@ -2021,6 +2021,15 @@ and (max-width: 767px) {
     .footer--inner-section.footer-follow .social-icons {
         width: 100%;
     }
+
+    .full-menu .secondary-heading-enhanced {
+        font-size: 16px;
+    }
+
+    .full-menu .svg-close {
+        top: 30px !important;
+        right: 30px !important;
+    }
 }
 
 @media only screen
@@ -2109,4 +2118,8 @@ and (orientation: landscape) {
 .burger-menu {
     cursor: pointer;
     pointer-events: all;
+}
+
+.scroll-hidden {
+    overflow: hidden;
 }
