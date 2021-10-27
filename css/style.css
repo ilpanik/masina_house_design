@@ -621,6 +621,126 @@ a {
     right: 250px;
 }
 
+/* PORTFOLIO ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  */
+.img-hover-zoom {
+    /*height: 300px; !* [1.1] Set it as per your need *!*/
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    cursor: pointer;
+    position: relative;
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom .pf-bg {
+    transition: transform 1s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover .pf-bg {
+    transform: scale(1.1);
+}
+
+.img-hover-zoom .rect-full {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    background: transparent;
+    border: 1px solid #fff;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.img-hover-zoom .rect-prev {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 70px;
+    width: 250px;
+    background: #C09A5B;
+    z-index: 1;
+    transform: translate(-500%, -50%);
+    transition: transform 1.5s ease;
+}
+
+.img-hover-zoom .rect-next {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 70px;
+    width: 250px;
+    background: #fff;
+    z-index: 2;
+    transform: translate(-400%, -50%);
+    transition: transform 1s ease;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-hover-zoom .rect-next .secondary-heading {
+    text-align: center;
+}
+
+.img-hover-zoom:hover > .rect-full {
+    opacity: 1;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.img-hover-zoom:hover > .rect-prev {
+    transform: translate(-50%, -50%);
+    transition-duration: .5s;
+}
+
+.img-hover-zoom:hover > .rect-next {
+    transform: translate(-50%, -50%);
+}
+
+
+/*________________________*/
+
+.pf-container {
+    margin: 0 150px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    grid-auto-rows: 35vh;
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+}
+
+.pf-container .pf-bg {
+    height: 100%;
+    width: 100%;
+
+    background-image: url("../assets/images/project-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.horizontal {
+    grid-column: span 2;
+}
+
+/*.vertical {*/
+/*    grid-row: span 2;*/
+/*}*/
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/*_________________________*/
+
+
 .portfolio .portfolio--inner {
     margin: 0 150px;
     /*width: 100%;*/
@@ -672,12 +792,14 @@ a {
     margin-top: 10px;
 }
 
-.portfolio .project--final-section {
+.project--final-section {
     height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+/* FINE PORTFOLIO /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* PROJECT DETAIL /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -1061,6 +1183,10 @@ and (max-width: 1439px) {
     /*.about-us-section-four .about-us-section-four--inner-text {*/
     /*    top: 55%*/
     /*}*/
+    .pf-container {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+    }
+
     .portfolio .portfolio--inner .portfolio--inner-start {
         width: 100%;
         text-align: center;
@@ -1226,6 +1352,10 @@ and (max-width: 1023px) {
     .about-us-section-four--inner .get-in-touch {
         bottom: 0;
         right: 0;
+    }
+
+    .pf-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
     }
 
     .portfolio .portfolio--inner .portfolio--inner-start {
@@ -1837,6 +1967,11 @@ and (max-width: 767px) {
     }
 
     /* FINE ABOUT US _____________________________________________________________*/
+    .pf-container {
+        margin: 0;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 2fr));
+    }
+
     .portfolio {
         background: #F9F5ED;
     }
@@ -1901,7 +2036,7 @@ and (max-width: 767px) {
         margin-top: 10px;
     }
 
-    .portfolio .project--final-section {
+    .project--final-section {
         display: none;
     }
 

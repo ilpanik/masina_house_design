@@ -301,7 +301,8 @@ window.addEventListener("DOMContentLoaded", () => {
         window.location = '../';
     });
 
-    let projects = document.querySelectorAll('.portfolio .project');
+    // let projects = document.querySelectorAll('.portfolio .project');
+    let projects = document.querySelectorAll('.img-hover-zoom');
     for (var i = 0; i < projects.length; i++) {
         projects[i].addEventListener("click", function () {
             console.log('project clicked');
@@ -417,3 +418,19 @@ document.querySelector('.fb-icon').addEventListener("click", function () {
 document.querySelector('.linkedin-icon').addEventListener("click", function () {
     window.open('', '_blank');
 });
+
+
+// function getRandomSize(min, max) {
+//     return Math.round(Math.random() * (max - min) + min);
+// }
+//
+// var allImages = "";
+//
+// for (var i = 0; i < 25; i++) {
+//     var width = getRandomSize(200, 400);
+//     var height = getRandomSize(200, 400);
+//     let img = document.createElement("img")
+//     img.src = `https://placekitten.com/${width}/${height}`
+//     // allImages += '<img src="https://placekitten.com/' + width + '/' + height + '" alt="pretty kitty">';
+//     document.querySelector('#photos').append(img);
+// }
