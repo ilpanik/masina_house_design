@@ -817,6 +817,49 @@ a {
     height: auto;
     width: 100%;
 }
+/* fix imgs size */
+
+.main-section-img img {
+    max-height: 656px;
+    max-width: 460px;
+}
+
+.drop-section-first img {
+    max-height: 544px;
+    max-width: 827px;
+}
+
+.drop-section-second img {
+    max-height: 413px;
+    max-width: 214px;
+}
+
+.combo-section-type-one--one img {
+    max-height: 489px;
+    max-width: 705px;
+}
+
+.combo-section-type-one--two img {
+    max-height: 1057px;
+    max-width: 705px;
+}
+
+.control-section-img img {
+    max-height: 705px;
+    max-width: 1116px;
+}
+
+.combo-section-type-two--one img {
+    max-height: 674px;
+    max-width: 460px;
+}
+
+.combo-section-type-two--two img {
+    max-height: 889px;
+    max-width: 583px;
+}
+
+/* fine fix imgs size */
 
 .project-detail .project-detail--inner {
     margin: 0 125px;
