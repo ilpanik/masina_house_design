@@ -298,7 +298,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     document.querySelector('.home-link').addEventListener("click", function () {
-        window.location = '../';
+        window.location = '/';
     });
 
     // let projects = document.querySelectorAll('.portfolio .project');
