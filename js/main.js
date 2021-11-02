@@ -298,15 +298,24 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     document.querySelector('.home-link').addEventListener("click", function () {
-        window.location = '/';
+        window.location = '../';
     });
 
     // let projects = document.querySelectorAll('.portfolio .project');
     let projects = document.querySelectorAll('.img-hover-zoom');
     for (var i = 0; i < projects.length; i++) {
-        projects[i].addEventListener("click", function () {
-            console.log('project clicked');
-            window.location = '../project-detail';
+        projects[i].addEventListener("click", function (e) {
+            if (e.target.classList.contains('ev-carmen')) window.location = 'carmen';
+            if (e.target.classList.contains('ev-villa')) window.location = 'abu-dhabi-villa';
+            if (e.target.classList.contains('ev-boulevard-heights')) window.location = 'boulevard-heights';
+            if (e.target.classList.contains('ev-al-manara')) window.location = 'al-manara';
+            if (e.target.classList.contains('ev-palace')) window.location = 'abu-dhabi-palace';
+            if (e.target.classList.contains('ev-bvlgari')) window.location = 'bvlgari';
+            if (e.target.classList.contains('ev-jumeirah-palm')) window.location = 'jumeirah-palm';
+            if (e.target.classList.contains('ev-marina')) window.location = 'marina';
+            // else window.location = ''
+            // console.log('project clicked', e.target.classList.contains('ev-marina'));
+            // window.location = '../project-detail';
         }, false);
     }
 });
@@ -419,6 +428,9 @@ document.querySelector('.linkedin-icon').addEventListener("click", function () {
     window.open('', '_blank');
 });
 
+document.querySelector('.home-link--detail').addEventListener("click", function () {
+    window.location = '../../';
+});
 
 // function getRandomSize(min, max) {
 //     return Math.round(Math.random() * (max - min) + min);

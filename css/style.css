@@ -719,10 +719,43 @@ a {
     height: 100%;
     width: 100%;
 
-    background-image: url("../assets/images/project-1.png");
+    /*background-image: url("../assets/images/project-1.png");*/
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    /*background-position: 50% 50%;*/
+    background-position: 50% 70%;
+}
+
+.pf-container .pf-bg.pf-carmen {
+    background-image: url("../assets/images/carmen/6.jpg");
+}
+
+.pf-container .pf-bg.pf-villa {
+    background-image: url("../assets/images/abu-dhabi-villa/2.jpg");
+}
+
+.pf-container .pf-bg.pf-boulevard-heights {
+    background-image: url("../assets/images/boulevard-heights/6.jpg");
+}
+
+.pf-container .pf-bg.pf-al-manara {
+    background-image: url("../assets/images/al-manara/9.jpg");
+}
+
+.pf-container .pf-bg.pf-palace {
+    background-image: url("../assets/images/abu-dhabi-palace/4.jpg");
+}
+
+.pf-container .pf-bg.pf-bvlgari {
+    background-image: url("../assets/images/bvlgari/4.jpg");
+}
+
+.pf-container .pf-bg.pf-jumeirah-palm {
+    background-image: url("../assets/images/jumeirah-palm/6.jpg");
+}
+
+.pf-container .pf-bg.pf-marina {
+    background-image: url("../assets/images/marina/4.jpg");
 }
 
 .horizontal {
@@ -997,9 +1030,37 @@ a {
     color: #FFFFFF;
 }
 
-.home-link {
+.home-link,
+.home-link--detail{
     cursor: pointer;
     pointer-events: all;
+}
+
+.svg-mail {
+    display: block;
+    text-indent: -9999px;
+    width: 25px;
+    height: 20px;
+    background: url(../assets/images/email-sm.svg);
+    background-size: contain;
+}
+
+.svg-phone {
+    display: block;
+    text-indent: -9999px;
+    width: 22px;
+    height: 22px;
+    background: url(../assets/images/phone-sm.svg);
+    background-size: contain;
+}
+
+.svg-marker {
+    display: block;
+    text-indent: -9999px;
+    width: 16px;
+    height: 21px;
+    background: url(../assets/images/marker-sm.svg);
+    background-size: contain;
 }
 
 .main-heading {
@@ -1687,33 +1748,6 @@ and (max-width: 767px) {
 
     .home-contacts-mobile .home-contacts-mobile-icons a:not(:last-child) {
         margin-right: 64px;
-    }
-
-    .svg-mail {
-        display: block;
-        text-indent: -9999px;
-        width: 25px;
-        height: 20px;
-        background: url(../assets/images/email-sm.svg);
-        background-size: contain;
-    }
-
-    .svg-phone {
-        display: block;
-        text-indent: -9999px;
-        width: 22px;
-        height: 22px;
-        background: url(../assets/images/phone-sm.svg);
-        background-size: contain;
-    }
-
-    .svg-marker {
-        display: block;
-        text-indent: -9999px;
-        width: 16px;
-        height: 21px;
-        background: url(../assets/images/marker-sm.svg);
-        background-size: contain;
     }
 
     .section-reminder {
