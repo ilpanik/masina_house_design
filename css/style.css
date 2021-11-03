@@ -43,6 +43,10 @@ a {
     /*opacity: 0;*/
 }
 
+.home-container .main-text {
+    font-size: 14px;
+}
+
 .fake-navbar {
     min-height: 100px;
     display: flex;
@@ -87,6 +91,10 @@ a {
 .fake-navbar .fake-navbar--inner > .masina-btn {
     margin-right: 50px;
     pointer-events: all;
+}
+
+.full-menu .secondary-heading-enhanced {
+    font-size: 18px;
 }
 
 .home-start-mobile,
@@ -854,6 +862,7 @@ a {
     height: auto;
     width: 100%;
 }
+
 /* fix imgs size */
 
 .main-section-img img {
@@ -1035,7 +1044,7 @@ a {
 }
 
 .home-link,
-.home-link--detail{
+.home-link--detail {
     cursor: pointer;
     pointer-events: all;
 }
@@ -1093,7 +1102,16 @@ a {
     color: #C09A5B;
 }
 
-.secondary-heading-enhanced a {
+.secondary-heading-enhanced-menu {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+    color: #C09A5B;
+}
+
+.secondary-heading-enhanced a,
+.secondary-heading-enhanced-menu {
     color: inherit;
 }
 
