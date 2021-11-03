@@ -166,6 +166,8 @@ window.addEventListener("DOMContentLoaded", () => {
         // y: (i, target) => -totalScroll * target.dataset.speed,
         y: (i, target) => {
             let targetSpeed = Number(target.dataset.speed);
+            console.log(targetSpeed);
+            console.log(targetSpeed + 0.1);
             return -totalScroll * (isNotMobile.matches ? targetSpeed + 0.1 : targetSpeed - 0.03);
         },
         scrollTrigger: {
