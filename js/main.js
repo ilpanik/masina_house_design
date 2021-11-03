@@ -163,7 +163,11 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     gsap.to(".combo-section-type-one--one", {
-        y: (i, target) => -totalScroll * target.dataset.speed,
+        // y: (i, target) => -totalScroll * target.dataset.speed,
+        y: (i, target) => {
+            let targetSpeed = Number(target.dataset.speed);
+            return -totalScroll * (isNotMobile.matches ? targetSpeed + 0.1 : targetSpeed - 0.03);
+        },
         scrollTrigger: {
             scrub: true,
             trigger: ".combo-section-type-one"
@@ -313,6 +317,7 @@ window.addEventListener("DOMContentLoaded", () => {
             if (e.target.classList.contains('ev-bvlgari')) window.location = 'bvlgari';
             if (e.target.classList.contains('ev-jumeirah-palm')) window.location = 'jumeirah-palm';
             if (e.target.classList.contains('ev-marina')) window.location = 'marina';
+            if (e.target.classList.contains('ev-saadiyat')) window.location = 'abu-dhabi-saadiyat';
             // else window.location = ''
             // console.log('project clicked', e.target.classList.contains('ev-marina'));
             // window.location = '../project-detail';
