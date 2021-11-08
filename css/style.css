@@ -395,6 +395,10 @@ a {
     justify-content: space-between;
 }
 
+.footer--inner-section.footer-follow .social-icons > div:not(:first-child) {
+    margin-left: 10px;
+}
+
 .footer--inner-section.footer-follow .social-icons > div {
     cursor: pointer;
 }
@@ -768,6 +772,14 @@ a {
 
 .pf-container .pf-bg.pf-saadiyat {
     background-image: url("../assets/images/abu-dhabi-saadiyat/9.jpg");
+}
+
+.pf-container .pf-bg.pf-boulevard-point {
+    background-image: url("../assets/images/boulevard-point/9.jpg");
+}
+
+.pf-container .pf-bg.pf-quoz-hq {
+    background-image: url("../assets/images/quoz-hq/4.jpg");
 }
 
 .horizontal {

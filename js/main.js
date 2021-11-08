@@ -320,6 +320,8 @@ window.addEventListener("DOMContentLoaded", () => {
             if (e.target.classList.contains('ev-jumeirah-palm')) window.location = 'jumeirah-palm';
             if (e.target.classList.contains('ev-marina')) window.location = 'marina';
             if (e.target.classList.contains('ev-saadiyat')) window.location = 'abu-dhabi-saadiyat';
+            if (e.target.classList.contains('ev-boulevard-point')) window.location = 'boulevard-point';
+            if (e.target.classList.contains('ev-quoz-hq')) window.location = 'quoz-hq';
             // else window.location = ''
             // console.log('project clicked', e.target.classList.contains('ev-marina'));
             // window.location = '../project-detail';
@@ -403,7 +405,7 @@ function createRipple(event) {
 }
 
 function openEmailClient() {
-    window.location.href = "mailto:info@masinaouse.com";
+    window.location.href = "mailto:info@masinahouse.com";
 }
 
 document.querySelector('.burger-menu-mobile').addEventListener("click", function () {
@@ -433,6 +435,11 @@ document.querySelector('.fb-icon').addEventListener("click", function () {
 
 document.querySelector('.linkedin-icon').addEventListener("click", function () {
     window.open('', '_blank');
+});
+
+document.querySelector('.wa-icon').addEventListener("click", function () {
+    console.log('ciao');
+    window.open('https://wa.me/97147707502', '_blank');
 });
 
 document.querySelector('.home-link--detail').addEventListener("click", function () {
