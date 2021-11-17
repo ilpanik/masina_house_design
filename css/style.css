@@ -209,8 +209,8 @@ a {
     position: relative;
     margin-top: 150px;
     margin-bottom: 140px;
-    /*min-height: 842px;*/
-    min-height: 1052px;
+    min-height: 842px;
+    /*min-height: 1052px;*/
 }
 
 .home-about .home-about--inner {
