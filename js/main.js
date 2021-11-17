@@ -434,12 +434,12 @@ document.querySelector('.fb-icon').addEventListener("click", function () {
 });
 
 document.querySelector('.linkedin-icon').addEventListener("click", function () {
-    window.open('', '_blank');
+    window.open('https://www.linkedin.com/company/masina-house-design/about/', '_blank');
 });
 
 document.querySelector('.wa-icon').addEventListener("click", function () {
-    console.log('ciao');
-    window.open('https://wa.me/97147707502', '_blank');
+    console.log('test');
+    window.open('https://wa.me/+971506554857', '_blank');
 });
 
 document.querySelector('.home-link--detail').addEventListener("click", function () {

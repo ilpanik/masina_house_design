@@ -209,7 +209,8 @@ a {
     position: relative;
     margin-top: 150px;
     margin-bottom: 140px;
-    min-height: 842px;
+    /*min-height: 842px;*/
+    min-height: 1052px;
 }
 
 .home-about .home-about--inner {
@@ -616,17 +617,21 @@ a {
 .about-us-section-four .about-us-section-four--inner-text-section {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: space-between;
     margin-top: 30px;
     width: 70%;
+}
+
+.about-us-section-four .about-us-section-four--inner-text-section .secondary-text-enhanced {
+    flex: 1;
 }
 
 .about-us-section-four .about-us-section-four--inner-text-section .secondary-text-enhanced:not(:first-child) {
     margin-left: 100px;
 }
 
-.about-us-section-four--inner .get-in-touch {
+.about-us-section-four .get-in-touch {
     position: absolute;
     /*bottom: 120px;*/
     bottom: 40px;
@@ -1487,7 +1492,7 @@ and (max-width: 1023px) {
         width: 95%;
     }
 
-    .about-us-section-four--inner .get-in-touch {
+    .about-us-section-four .get-in-touch {
         bottom: 0;
         right: 0;
     }
@@ -2063,7 +2068,7 @@ and (max-width: 767px) {
         display: none;
     }
 
-    .about-us-section-four--inner .get-in-touch {
+    .about-us-section-four .get-in-touch {
         display: none;
     }
 
