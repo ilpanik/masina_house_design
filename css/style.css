@@ -1323,6 +1323,16 @@ and (max-width: 1439px) {
         margin-left: 40px;
     }
 
+    .abs-3 {
+        top: 900px;
+        left: 20%;
+    }
+
+    .abs-4 {
+        top: 450px;
+        width: 40%;
+    }
+
     /*.about-us-section-four .about-us-section-four--inner-text {*/
     /*    top: 55%*/
     /*}*/
@@ -1339,6 +1349,21 @@ and (max-width: 1439px) {
         display: block;
     }
 
+    .about-us-section-two .about-us-section-two--left > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-us-section-three .about-us-section-three--right {
+        left: unset;
+        right: 0;
+    }
+
+    .about-us-section-four .about-us-section-four--left {
+        left: 0;
+        width: 30%;
+    }
+
     .project-left,
     .project-right {
         display: none;
@@ -1349,7 +1374,9 @@ and (max-width: 1439px) {
     }
 
     .combo-section-type-one .combo-section-type-one--one {
-        top: 680px;
+        top: 150px;
+        width: 70%;
+        height: auto;
     }
 
     .combo-section-type-one .combo-section-type-one--two {
